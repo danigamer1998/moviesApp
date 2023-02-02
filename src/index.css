@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+:root {
+  font-family:'Source Sans Pro', Arial, sans-serif;
+  font-size: 1em;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background:rgb(0, 0, 0);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  
+}
+
+.contentmv{
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  width: 100%;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width:90%;
+  padding: 25px 0px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.posterText h2{
+  font-size: 49px;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+
+}
+
+.App{
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  flex-direction: column;
+  
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* .episodeoCard{
+  min-height: 300px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+
+.episodeoCard img{
+  width: 100%;
+  height: 100%;
+} */
+
+/* .episodeoCard h5{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  padding: 20px;
+  transition: all 0.4s ease-in;
+}
+.episodeoCard:hover h5{
+  background-color: rgb(12, 19, 41,0.6);
+  transform: translateY(0);
+} */
+
+.rowcontainer h5,.rowcontainer h2{
+  margin-bottom: 30px;
+}

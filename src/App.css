@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.movies {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-direction: row;
+  width: 100%;
+  margin: 40px 0px;
+  align-items: center;
+}
+.movies:nth-child(3) {
+  background: blue;
+}
+.oculto {
+  display: none;
+}
+
+.movie {
+  background-color: #888;
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.movies .cardmovs {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(51, 51, 51);
+}
+
+.movies a {
+  width: 30%;
+  height: 100%;
+}
+.movies .cardmovs p {
+  position: absolute;
+  width: 100%;
+  min-height: 20%;
+  left: 0;
+  bottom: 0;
+  transform: translate(0px, 90px);
+  transition: ease 0.6s all;
+  background-color: black;
+  z-index: 1;
+}
+.movies .cardmovs:hover p {
+  transform: translate(0, 0);
+}
+
+.movies .cardmovs:hover {
+  transform: scale(1.2);
+  transition: ease all 1s;
+  z-index: 1;
+}
+.logo {
+  will-change: filter;
+  filter: drop-shadow(0 0 1em #e60808fb);
+}
+.cardmovs img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.posterText {
+  width: 60%;
+}
+
+.generes {
+  margin-bottom: 11px;
+}
+.generes button {
+  display: inline-block;
+  margin-right: 4px;
+  color: #cdcdcd;
+  font-size: 15px;
+  background-color: #16161caa;
+  border-radius: 40px;
+  padding: 5px 8px;
+  border: 2px solid rgb(187, 187, 187);
+}
+.Slider {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.slidercards {
+  max-width: 100%;
+  transition: ease 1000ms;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 500px;
+}
+.cardslid {
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.cardslid::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(10, 10, 10) 20%, rgba(10, 10, 10, 0));
+  position: absolute;
+  z-index: 1;
+}
+.cardslid .carouselinfo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 60%;
+  padding: 30px;
+  text-align: left;
+  z-index: 2;
+}
+.cardslid h3 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.cardslid .btn {
+  margin: 10px 0px;
+}
+.cardslid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.generes button:hover {
+  color: #e5e5e5;
+
+  border: 2px solid rgb(255, 255, 255);
+}
+.Containerseason {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  height: 250px;
+  background-color: #2a2a2aaa;
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid rgb(18, 18, 18);
+}
+
+.Containerseason .seasonText {
+  width: 80%;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 17px;
+  text-align: left;
+}
+.Containerseason .seasonText p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+}
+.Containerseason img {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+}
+.ListMovies{
+  width: 90%;
+  margin: 0 auto;
+  
+}
+.posterText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: left;
+}
+.btn {
+  padding: 10px 26px;
+  font-size: 20px;
+  margin: 5px;
+  background-color: #ffffff8e;
+}
+.playmovie {
+  display: inline-block;
+  color: #ffffff;
+  background-color: rgba(255, 0, 38, 0.848);
+}
+.playmovie:hover {
+  color: #cdcdcd;
+  background-color: rgba(red);
+}
+.contentmv h3 {
+  margin: 20px 0px;
+}
+.containerCard {
+  width: 100%;
+}
+.rowcd {
+  margin-top: 20px;
+  width: 90%;
+}
+
+.posterText h2 {
+  line-height: normal;
+}
+.puntaacion {
+  font-size: 22px;
+}
